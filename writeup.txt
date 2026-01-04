@@ -1,0 +1,9 @@
+#task 1: Predict a given user book pair for pairs read csv
+The strategy that I chose was to use the jacard similarity function to generative a negative set of books and accurately predict whether a user read the book or not. 
+
+
+#task 2: ratings prediction, predict the star ratings from user item pairs in pairs ratings
+
+My approach was to utilize a latnt factor model where the train ratings and global average are defined. Then I create betaU and betaI and created a function iterate to account for the lamb function. After that I was able to generate an MSE and write it to the csv file. 
+
+I used a regularizer and set the variable equal to 0. I used gradient descent to update the parameters alpha and the betas. 
